@@ -1,0 +1,158 @@
+section.sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.sec h1{
+    margin: 0 0 20px 0;
+    font-size: 2em;
+}
+div.tabela_bg{
+    width: 100%;
+}
+div.tabela_bg
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #e2e2e2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+div.tabela_bg
+table tbody tr th{
+    width: 70px;
+    padding: 15px 0;
+    color: white;
+    background-color: rgb(17, 17, 17);
+}
+div.tabela_bg
+table tbody tr td{
+    border-bottom: 1px solid #22222274;
+    padding: 20px;
+    text-align: center;
+    /**/
+}
+div.tabela_bg
+table tbody tr:nth-of-type(2n + 1) td{
+    background-color: white;
+}
+
+/*Aside*/
+
+aside.controls{
+    position: absolute;
+    right: 40px;
+    top: calc(20vh + 70px);
+}
+aside.controls button{
+    border-radius: 100%;
+    padding: 0px 15px;
+    box-shadow: #434755d9 0px 0px .1em, #5a7dbc0d 0px 0.25em 1em;
+    background-color: white;
+    font-size: 3.5em;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+aside.controls button:hover{
+    color: #343fd8;
+    transform: scale(1.05);
+}
+
+/*Modal*/
+
+div#modal_add{
+    position: fixed;
+    z-index: 5;
+    top: 63px;
+    right: 0;
+    left: 0;
+    padding: 4vw 0 0 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.433);
+}
+div#modal_add.inativo{
+    display: none;
+}
+span#closeModalAdd{
+    float: right;
+    position: relative;
+    z-index: 3;
+    top: -35px;
+    color: black;
+    font-size: 4.5em;
+    cursor: pointer;
+    transition: 200ms ease;
+}
+span#closeModalAdd:hover{
+    transform: scale(1.1);
+}
+div.modal{
+    margin: 0 auto;
+    padding: 40px 30px;
+    width: 60%;
+    background-color: white;
+    text-align: center;
+}
+div.modal
+div.form{
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.cx_inp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+div.cx_inp label{
+    font-size: 1.3em;
+}
+div.cx_inp:nth-child(1) label{
+    margin: 0 0 0 2.5vw;
+}
+div.cx_inp:nth-child(2) label,
+div.cx_inp:nth-child(3) label{
+    margin: 17px 0 0 2.5vw;
+}
+div.form input{
+    margin: 5px 0 0 2.5vw;
+    padding: 10px 20px;
+    width: 55vw;
+    outline: none;
+    font-size: 1em;
+    box-shadow: rgba(0, 0, 0, 0.59) 0px 0px 0px 2px;
+}
+button#saveRow{
+    margin: 20px 0 0 0;
+    padding: 10px 40px;
+    font-size: 1.3em;
+    color: white;
+    background-color: #343fd8;
+    cursor: pointer;
+    transition: 200ms ease;
+}
+button#saveRow:hover{
+    background-color: #515ad1;
+}
+div.validation.inativo{
+    display: none;
+}
+div.validation{
+    margin: 0 0 -40px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+div.validation p{
+    margin: 5px 0 0 0;
+    border: 2.5px solid rgb(114, 113, 113);
+    padding: 10px 0;
+    width: 200px;
+    text-align: center;
+    color: #ba0a0a;
+}
+

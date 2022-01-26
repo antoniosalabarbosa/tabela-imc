@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+div#container{
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 100%;
+    background-color: #222;
+}
+header div{
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+header div strong{
+    color: white;
+    font-size: 1.25em;
+}
+section{
+    margin: 20px 0 0 0;
+}

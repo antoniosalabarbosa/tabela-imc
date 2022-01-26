@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de IMC</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div>
+                <strong>Acompanhamento do IMC Antonio</strong>
+            </div>
+        </header>
+
+        <section class="sec">
+            <h1>Tabela de Dias</h1>
+
+            <div class="tabela_bg">
+                <table>
+                    <tbody id="tabela">
+                        <tr>
+                            <th>Dia</th>
+                            <th>Peso</th>
+                            <th>Altura</th>
+                            <th>IMC</th>
+                            <th>Situação</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div id="modal_add" class="inativo">
+            <div class="modal">
+                <span id="closeModalAdd">&times;</span>
+                <h2>Adicionar Linha na Tabela</h2>
+                <div class="form">
+                    <div class="cx_inp">
+                        <label>Dia:</label>
+                        <input type="date" class="inp_tbl" placeholder="Dia">
+                        <div class="validation inativo">
+                            <p>Preencha esse campo adequadamente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cx_inp">
+                        <label>Peso:</label>
+                        <input type="number" class="inp_tbl" placeholder="Peso">
+                        <div class="validation inativo">
+                            <p>Preencha esse campo adequadamente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cx_inp">
+                        <label>Altura:</label>
+                        <input type="number" class="inp_tbl" placeholder="Altura">
+                        <div class="validation inativo">
+                            <p>Preencha esse campo adequadamente.</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="saveRow">Salvar</button>
+                </div>
+            </div>
+        </div>
+
+        <aside class="controls">
+            <button id="addRow">+</button>
+        </aside>
+
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
